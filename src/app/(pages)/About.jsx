@@ -14,7 +14,7 @@ export default function About() {
                 <div className="mt-8 w-full flex gap-6 flex-wrap justify-around">
                     <div className="w-fit border rounded">
                         <div className="py-4 bg-muted text-2xl font-semibold text-center">Languages</div>
-                        <div className="p-2 flex gap-4 flex-wrap">
+                        <div className="p-2 flex gap-4 flex-center flex-wrap">
                             <TechCard img="./images/icons/html.svg" label="HTML" />
                             <TechCard img="./images/icons/css.svg" label="CSS" />
                             <TechCard img="./images/icons/js.svg" label="JS" />
@@ -22,7 +22,7 @@ export default function About() {
                     </div>
                     <div className="w-fit border rounded">
                         <div className="py-4 bg-muted text-2xl font-semibold text-center">Others</div>
-                        <div className="p-2 flex gap-4 flex-wrap w-fit">
+                        <div className="p-2 flex gap-4 flex-center flex-wrap w-fit">
                             <TechCard img="./images/icons/git.svg" label="Git" />
                             <TechCard img="./images/icons/github.svg" label="Github" />
                             <TechCard img="./images/icons/npm.svg" label="npm" />
@@ -31,7 +31,7 @@ export default function About() {
                     </div>
                     <div className="w-fit border rounded">
                         <div className="py-4 bg-muted text-2xl font-semibold text-center">Technologies</div>
-                        <div className="p-2 flex gap-4 flex-wrap w-fit">
+                        <div className="p-2 flex gap-4 flex-center flex-wrap w-fit">
                             <TechCard img="./images/icons/tailwindcss.svg" label="Tailwind" />
                             <TechCard img="./images/icons/shadcn.svg" label="Shadcn-UI" />
                             <TechCard img="./images/icons/react.svg" label="React JS" />
