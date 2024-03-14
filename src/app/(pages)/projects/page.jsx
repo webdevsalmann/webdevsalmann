@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/ui/ProjectCard";
 import { buttonVariants } from "@/components/ui/button";
 import { projectsData } from "@/lib/const";
-import SparkleText from "@/helper/SparkleText";
+import SparkleText from "@/components/helper/SparkleText";
 import Link from "next/link";
 
 export default function Page() {

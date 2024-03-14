@@ -1,12 +1,12 @@
 import ProjectCard from "@/components/ui/ProjectCard";
 import { buttonVariants } from "@/components/ui/button";
-import SparkleText from "@/helper/SparkleText";
+import SparkleText from "@/components/helper/SparkleText";
 import Link from "next/link";
 
 export default function page() {
     return (
         <section className="section-padding">
-            <h1 className="mb-8 text-center"><SparkleText text="Hire Me" /> For Project</h1>
+            <h2 className="mb-8 md:text-center"><SparkleText text="Hire Me" /> For Project</h2>
 
             <div className="my-6 grid gap-4 grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))]">
                 <ProjectCard

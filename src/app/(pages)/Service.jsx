@@ -1,9 +1,8 @@
-import { Idevice, Ioptimize, Ishape, Itools } from "@/components/svgs/svgs";
-// import { PiBrowserBold } from "react-icons/pi";
-// import { LuHeartHandshake } from "react-icons/lu";
-import SparkleText from "@/helper/SparkleText";
+"use client"
+import SparkleText from "@/components/helper/SparkleText";
 import ServiceCard from "@/components/ui/ServiceCard";
 import { Earth, MonitorSmartphone, PencilRuler, Shapes, TrendingUp, Wrench } from "lucide-react";
+import { motion } from "framer-motion"
 
 const serviceData = [
     {
@@ -41,7 +40,13 @@ const serviceData = [
 export default function Service() {
     return (
         <section className="section-padding">
-            <h1 className="mb-8">What <span className=""><SparkleText text="Services" /></span> you get?</h1>
+            <motion.h2
+                className="md:text-center"
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+            >What <span className=""><SparkleText text="Services" /></span> you get?</motion.h2>
             <div className="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(18rem,_1fr))] justify-center items-center">
                 {
                     serviceData.map((item, i) => {

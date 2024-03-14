@@ -1,4 +1,4 @@
-import SparkleText from "@/helper/SparkleText";
+import SparkleText from "@/components/helper/SparkleText";
 
 export default function Page() {
   return (

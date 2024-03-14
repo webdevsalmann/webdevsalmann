@@ -1,14 +1,22 @@
-import SparkleText from "@/helper/SparkleText";
+"use client"
+import SparkleText from "@/components/helper/SparkleText";
 import HomeProjectCard from "@/components/ui/HomeProjectCard";
 import Link from "next/link";
 import { projectsData } from "@/lib/const";
 import { buttonVariants } from "@/components/ui/button";
+import { motion } from "framer-motion"
 
 export default function Projects() {
-    const displayData = projectsData.slice(0, 4);
+    const displayData = projectsData.slice(0, 3);
     return (
         <section className="section-padding">
-            <h1 className="mb-8"><SparkleText text="Showcase" /> Projects</h1>
+            <motion.h2
+                className="md:text-center"
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+            ><SparkleText text="Portfolio" /></motion.h2>
 
             <div className="flex flex-col gap-10">
                 {displayData && displayData.map((item, i) => (
